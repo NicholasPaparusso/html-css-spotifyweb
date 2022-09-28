@@ -97,11 +97,28 @@ aside{
 }
 /* Layout */
 
+/* Header */
+header .btn{
+  color: white;
+  border: 1px solid white;
+  border-radius: 300px;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-size: .8em;
+  position: absolute;
+  top:50%;
+  right: 1%;
+  transform: translate(0, -50%);
+}
+
+/* Header */
+
 /* Aside */
 aside{
   flex-direction: column;
   padding-top: 20px ;
   row-gap: 20px;
+  overflow: hidden;
 }
 
 aside .logo img{
