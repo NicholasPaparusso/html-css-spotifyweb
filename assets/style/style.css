@@ -11,4 +11,178 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: white;
+  font-weight: bold;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  color: #717171;
+  text-decoration: none;
+  font-size: .9em;
+  font-weight: bold;
+}
 /* General */
+/* Utilities */
+.bg-dark-grey{
+  background-color: #282828;
+}
+.bg-black{
+  background-color: #000000;
+}
+.bg-light-black{
+  background-color: #080b12;
+}
+.bg-dark-blue{
+  background-color: #141922;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.debug{
+  background-color: #7d7f84;
+}
+
+.scroll{
+  overflow-y: scroll;
+}
+
+.p-l-20{
+  padding-left: 20px;
+}
+/* Utilities */
+
+/* Layout */
+
+
+header{
+  height: 90px;
+  width: calc(100% - 230px);
+  position: fixed;
+  top: 0;
+  left: 230px;
+}
+
+.main-content{
+  margin-top: 90px;
+  height: calc(100vh - 180px );
+  width: calc(100% - 230px);
+  overflow-y: scroll;
+}
+
+
+footer{
+  height: 90px;
+}
+
+aside{
+  width: 230px;
+  max-height: calc(100vh - 90px);
+
+}
+/* Layout */
+
+/* Aside */
+aside{
+  flex-direction: column;
+  padding-top: 20px ;
+  row-gap: 20px;
+}
+
+aside .logo img{
+  width: 150px;
+  fill: white;
+}
+
+aside nav ul{
+  flex-direction: column;
+}
+
+aside nav img{
+  width: 25px;
+  color: #717171;
+  margin-right: 5px;
+  vertical-align:middle;
+}
+
+aside nav ul li{
+  padding-bottom: 8px;
+}
+
+ .playlist i{
+  color: #080b12;
+  padding: 5px 8px;
+  background-color:#717171;
+  font-size: 1.8em;
+  margin: 20px 5px 20px 0;
+  vertical-align: sub;
+ }
+
+
+ .playlist h4{
+  text-transform: uppercase;
+  font-size: 1em;
+ }
+
+ .playlist li{
+  line-height: 2.5em;
+ }
+
+ ul .container{
+  max-height: 200px;
+ }
+
+ .playlist li a{
+  font-size: .8em;
+ }
+
+ .bottom{
+  padding-top: 220px;
+ }
+
+#dnw{
+  width: 20px;
+}
+
+#profile{
+  width: 25px;
+  background-color: gray;
+  border-radius: 50%;
+}
+#dnw, #profile{
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.cta  a{
+  font-size: .8em;
+}
+
+.cta  a::after{
+  content: "";
+  display: block;
+  border: .5px solid gray;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.profile a{
+  font-size: 1em;
+  color: white;
+}
+/* Aside */
