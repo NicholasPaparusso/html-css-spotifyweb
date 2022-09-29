@@ -1,0 +1,138 @@
+@media screen and (max-width: 1550px) {
+  .card h4, h5 a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+
+}
+
+@media screen and (max-width: 1109px) {
+  .card{
+    width: calc((100% / 4) - 14px);
+  }
+}
+
+@media screen and (max-width: 837px) {
+  .card{
+    width: calc((100% / 3) - 14px);
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .card{
+    width: calc((100% / 2) - 14px);
+  }
+}
+
+@media screen and (max-width: 566px){
+  header{
+    width: calc(100% - 50px);
+    left: 50px;
+  }
+
+  .main-content{
+    width: calc(100% - 50px);
+  }
+
+  aside{
+    width: 50px;
+  }
+
+  aside .logo{
+    padding: unset;
+    display: flex;
+    justify-content: center;
+  }
+
+  aside  #logo-big, .playlist, span, .cta a::after{
+    display: none;
+  }
+
+  aside #logo-small{
+    display: block;
+  }
+
+  aside li a img{
+    display: block;
+  }
+
+  aside nav ul{
+    align-items: center;
+    padding: unset;
+  }
+
+  aside nav ul.p-20{
+    padding: 10px 0 0 5px;
+  }
+
+  aside nav ul li a img{
+    width: 25px;
+  }
+
+  aside .bottom{
+    padding: 0 0 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .card{
+    width: calc(100% - 14px);
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .col.mid .bar{
+    min-width: 120px;
+  }
+}
+@media screen and (max-width: 730px) {
+footer .song-icon{
+  flex-direction: column;
+}
+
+footer .col.right i{
+  padding: 0 5px;
+}
+}
+
+@media screen and (max-width: 660px) {
+  footer .song-text{
+    padding: 0 10px 0 10px;
+  }
+
+  footer .col.mid i{
+    padding: 0 5px;
+    font-size: 1em;
+  }
+
+  .col.mid i:nth-of-type(3){
+    padding: 0 10px;
+    font-size: 1.5em ;
+  }
+
+  footer .col.right{
+    padding-right: 10px;
+  }
+
+  footer .col.left{
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 560px){
+  footer .col.right i{
+    display: none;
+  }
+}
+
+
+
+
+
+

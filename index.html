@@ -25,13 +25,14 @@
       <aside class="bg-black d-flex p-t-20">
         <div class="top">
           <div class="logo p-l-20">
-            <img src="./assets/img/logo.svg" alt="logo">
+            <img id="logo-big" src="./assets/img/logo.svg" alt="logo">
+            <img id="logo-small" src="./assets/img/logo-small.svg" alt="">
           </div>
           <nav class="">
-            <ul class="d-flex p-20">
-              <li><a href="#"><img src="./assets/img/home.svg" alt=""> Home</a></li>
-              <li><a href="#"><img src="./assets/img/search.svg" alt="search"> Cerca</a></li>
-              <li><a href="#"><img src="./assets/img/libreria.svg" alt="library">La tua libreria</a></li>
+            <ul class="d-flex p-t-20">
+              <li><a class="p-l-20" href="#"><img src="./assets/img/home.svg" alt=""><span> Home</span></a></li>
+              <li><a class="p-l-20" href="#"><img src="./assets/img/search.svg" alt="search"><span> Cerca</span></a></li>
+              <li><a class="p-l-20" href="#"><img src="./assets/img/libreria.svg" alt="library"><span> La tua libreria</span></a></li>
             </ul>
           </nav>
           <div class="playlist p-l-20">
@@ -68,12 +69,12 @@
         <div class="bottom p-20">
           <div class="cta">
             <a href="#">
-              <img id="dnw" src="./assets/img/download.svg" alt="dwn"> Installa app
+              <img id="dnw" src="./assets/img/download.svg" alt="dwn"> <span>Installa app</span>
             </a>
           </div>
           <div class="profile">
             <a href="#">
-              <img id="profile" src="./assets/img/profile.svg" alt="profile"> Yout1
+              <img id="profile" src="./assets/img/profile.svg" alt="profile"> <span>Yout1</span>
             </a>
           </div>
         </div>
@@ -97,53 +98,54 @@
           <h2 class="p-l-40 p-t-40">Recently Played</h2>
           <div class="card-container d-flex p-40">
               <div class="card ">
-                <img src="./assets/img/metal_lifting.jpg" alt="">
+
+                <div class="img-container"><img src="./assets/img/metal_lifting.jpg" alt=""></div>
                 <h4><a href="#">Heavy Metal</a></h4>
                 <h5><a href="#">Subtitle</a></h5>
               </div>
 
               <div class="card">
-                <img src="./assets/img/stranger.jpeg" alt="stranger">
+                <div class="img-container"><img src="./assets/img/stranger.jpeg" alt="stranger"></div>
                 <h4><a href="#">Stranger Things, Vol. 1 (a Netflix Original Serie Soundtrack)</a></h4>
                 <h5><a href="#">Kyle Dixon & Michael Stein</a></h5>
               </div>
 
               <div class="card">
-                <img src="./assets/img/aquietplace.jpeg" alt="quiet">
+                <div class="img-container"><img src="./assets/img/aquietplace.jpeg" alt="quiet"></div>
                 <h4><a href="#">A quiet place</a></h4>
                 <h5><a href="#">Subtitle</a></h5>
               </div>
 
               <div class="card">
-                <img src="./assets/img/split.jpeg" alt="split">
+                <div class="img-container"><img src="./assets/img/split.jpeg" alt="split"></div>
                 <h4><a href="#">Split</a></h4>
                 <h5><a href="#">Subtitle</a></h5>
               </div>
 
               <div class="card">
-                <img src="./assets/img/cure.jpeg" alt="cure">
+                <div class="img-container"> <img src="./assets/img/cure.jpeg" alt="cure"></div>
                 <h4><a href="#">A cure for wellness</a></h4>
                 <h5><a href="#">Subtitle</a></h5>
               </div>
 
               <div class="card">
-                <img src="./assets/img/sinister.jpeg" alt="sinister">
+                <div class="img-container"> <img src="./assets/img/sinister.jpeg" alt="sinister"></div>
                 <h4><a href="#">Sinister</a></h4>
                 <h5><a href="#">Subtitle</a></h5>
               </div>
           </div>
         </section>
-        <section class="for-u p-l-40 p-t-40">
+        <section class="for-u p-l-40 p-t-40 p-r-40">
             <h2>Creato per Yout1</h2>
             <span>Più ascolti, più accurati saranno i suggerimenti.</span>
             <div class="card-container d-flex p-t-40">
             <div class="card">
-              <img src="./assets/img/radar.jpeg" alt="radar">
+              <div class="img-container"><img src="./assets/img/radar.jpeg" alt="radar"></div>
               <h4><a href="#">Release Radar</a></h4>
             </div>
 
             <div class="card">
-              <img src="./assets/img/mixdaily.jpeg" alt="Daily-mix">
+              <div class="img-container"><img src="./assets/img/mixdaily.jpeg" alt="Daily-mix"></div>
               <h4><a href="#">Daily Mix 1</a></h4>
             </div>
           </div>
@@ -154,12 +156,12 @@
           <span >Più ascolti, più accurati saranno i suggerimenti.</span>
           <div class="card-container d-flex p-t-40">
             <div class="card">
-              <img src="./assets/img/youg.jpeg" alt="">
+              <div class="img-container"><img src="./assets/img/youg.jpeg" alt=""></div>
               <h4><a href="#">Lana</a></h4>
             </div>
 
             <div class="card">
-              <img src="./assets/img/einaudi.jpeg" alt="einaudi">
+              <div class="img-container"><img src="./assets/img/einaudi.jpeg" alt="einaudi"></div>
               <h4><a href="#">Einaudi</a></h4>
             </div>
         </section>
@@ -174,9 +176,11 @@
             <div class="song-text p-l-20 p-r-30">
               <h4><a href="#">Sinister</a></h4>
               <h5><a href="#">Brano Nome</a></h5>
-              </div>
-            <i class="fa-regular fa-heart p-r-10"></i>
-            <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="song-icon d-flex">
+              <i class="fa-regular fa-heart p-r-10"></i>
+              <i class="fa-regular fa-folder"></i>
+            </div>
          </div>
         
 

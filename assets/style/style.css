@@ -24,6 +24,13 @@ ul, ol{
   list-style: none;
 }
 
+a span{
+  color: #717171;
+  text-decoration: none;
+  font-size: .8em;
+  font-weight: bold;
+}
+
 a{
   color: #717171;
   text-decoration: none;
@@ -37,6 +44,9 @@ span{
   font-weight: bold;
 }
 
+i{
+  cursor: pointer;
+}
 /* General */
 /* Utilities */
 .bg-dark-grey{
@@ -119,7 +129,7 @@ span{
 .card{
   width: calc((100% / 6) - 14px);
   text-align: center;
-  min-width: 140px;
+  min-width: 120px;
 }
 
 .card img{
@@ -170,7 +180,7 @@ header .btn{
   font-size: .8em;
   position: absolute;
   top:50%;
-  right: 1%;
+  right: 3%;
   transform: translate(0, -50%);
   text-align: center;
 }
@@ -186,7 +196,12 @@ aside{
 
 }
 
-aside .logo img{
+aside #logo-small{
+  display: none;
+  width: 25px;
+}
+
+aside #logo-big{
   width: 150px;
   fill: white;
 }
@@ -247,8 +262,8 @@ aside nav ul li{
   margin-right: 8px;
 }
 
-.cta  a{
-  font-size: .8em;
+.cta  a span{
+  font-size: .7em;
 }
 
 .cta  a::after{
@@ -259,7 +274,7 @@ aside nav ul li{
   margin: 10px 0;
 }
 
-.profile a{
+.profile a span{
   font-size: 1em;
   color: white;
 }
@@ -278,11 +293,10 @@ aside nav ul li{
 }
 
 .nav-bar ul li a{
-  font-size: 1em;
+  position: relative;
+  font-size: .8em;
   text-transform: uppercase;
 }
-
-
 
 .card-container{
   gap: 16px;
@@ -290,6 +304,16 @@ aside nav ul li{
   justify-content: flex-start;
   flex-wrap: wrap ;
   margin: 0 auto;
+}
+
+.main-content .img-container{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main-content img{
+  cursor: pointer;
 }
 
 .main-content h4 a{
@@ -319,7 +343,7 @@ footer .col{
 }
 
 .col.left{
-  width: calc(100% / 4);
+  width: calc(100% / 6);
   align-items: center;
 }
 
@@ -350,7 +374,7 @@ footer .col img{
   text-align: center;
   justify-content: center;
   row-gap: 20px;
-  flex-shrink: 0;
+  flex-shrink: 1;
   color: white;
 }
 
@@ -372,7 +396,8 @@ footer .col img{
 
 .col.mid .bar{
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
+  min-width: 300px;
   position: relative;
 }
 
@@ -397,7 +422,7 @@ footer .col img{
 
 .col.right{
   align-items: center;
-  width: calc(100% / 4);
+  width: calc(100% / 6);
   justify-content: flex-end;
 }
 
@@ -409,6 +434,7 @@ footer .col img{
 
 .col.right .bar{
   width:150px;
-  margin-top: 5px
+  min-width: 100px;
+  margin-top: 3px;
 }
 /* Footer */

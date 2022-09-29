@@ -1,0 +1,71 @@
+ a:hover, li a:hover, span:hover{
+  color: white;
+}
+
+aside nav li:hover img{
+  scale: 1.2;
+}
+
+aside nav  li:active{
+  border-left: 3px solid #adff2f ;
+}
+
+aside .playlist a:hover i{
+  background-color: white;
+}
+
+header .btn:hover{
+  scale: 1.05;
+}
+
+.nav-bar li a::after{
+  content: "";
+  border: 2px solid #adff2f;
+  position: absolute;
+  width: 40px;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50% , 0);
+  display: none;
+}
+
+.main-content .nav-bar li a:active::after{
+  display: block;
+  }
+
+  .main-content img:hover{
+   filter:brightness(50%)
+  }
+
+  .main-content .img-container::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f144";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    z-index: 99;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: none;
+    cursor: pointer;
+  }
+
+  .main-content .img-container:hover::before{
+    display: block;
+  }
+
+  .img-container::before:hover img{
+    filter:brightness(50%)
+  }
+
+  footer .col.left i:hover{
+    color: white;
+  }
+
+  footer .col.mid i:nth-last-of-type(3):hover{
+    scale: 1.2;
+  }
