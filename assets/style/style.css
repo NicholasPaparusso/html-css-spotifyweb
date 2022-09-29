@@ -69,6 +69,10 @@ span{
   overflow-y: scroll;
 }
 
+.p-t-10{
+  padding-top: 10px;
+}
+
 .p-l-20{
   padding-left: 20px;
 }
@@ -108,7 +112,7 @@ span{
 
 .card img{
   width: 100%;
-  scale: 1 1;
+  aspect-ratio:  1 / 1;
   object-fit: cover;
 }
 /* Utilities */
@@ -166,6 +170,8 @@ aside{
   flex-direction: column;
   row-gap: 20px;
   overflow: hidden;
+  justify-content: space-between;
+
 }
 
 aside .logo img{
@@ -213,10 +219,6 @@ aside nav ul li{
 
  .playlist li a{
   font-size: .8em;
- }
-
- .bottom{
-  padding-top: 220px;
  }
 
 #dnw{
@@ -283,4 +285,12 @@ aside nav ul li{
   font-weight: bold;
   font-size: 1.1em;
 }
+
+.popular-artist{
+  padding-top: 80px;
+}
 /* Main Content */
+
+/* Footer */
+
+/* Footer */
