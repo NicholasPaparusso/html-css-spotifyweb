@@ -72,6 +72,14 @@
     width: 25px;
   }
 
+  aside .active-v{
+    border-left: unset;
+  }
+
+  aside .active-v::before{
+    display: block;
+  }
+
   aside .bottom{
     padding: 0 0 10px 5px;
     display: flex;

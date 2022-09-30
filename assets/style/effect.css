@@ -4,10 +4,11 @@
 
 aside nav li:hover img{
   scale: 1.2;
+  filter: invert(0);
 }
 
 aside .playlist a:hover i{
-  background-color: white;
+  background-color: var(--white);
 }
 
 header .btn:hover{
@@ -25,7 +26,7 @@ header .btn:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    color: white;
+    color: var(--white);
     font-size: 50px;
     font-weight: 400;
     z-index: 99;
@@ -44,7 +45,7 @@ header .btn:hover{
   }
 
   footer .col.left i:hover{
-    color: white;
+    color: var(--white);
   }
 
   footer .col.mid i:nth-last-of-type(3):hover{
@@ -52,7 +53,7 @@ header .btn:hover{
   }
 
   footer .bar:hover .bar-hover{
-    background-color: #adff2f;
+    background-color: var(--lime-green);
   }
 
   .col.right .bar:hover.bar::after{
