@@ -137,6 +137,25 @@ i{
   aspect-ratio:  1 / 1;
   object-fit: cover;
 }
+
+.active-v{
+border-left: 3px solid #bcff33;
+}
+.active-o::after{
+  content: "";
+  border: 2px solid #adff2f;
+  position: absolute;
+  width: 40px;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50% , 0);
+}
+
+.active-o{
+  position: relative;
+  top: 0;
+  left: 0;
+}
 /* Utilities */
 
 /* Layout */
@@ -293,7 +312,6 @@ aside nav ul li{
 }
 
 .nav-bar ul li a{
-  position: relative;
   font-size: .8em;
   text-transform: uppercase;
 }
@@ -399,25 +417,48 @@ footer .col img{
   width: 50%;
   min-width: 300px;
   position: relative;
+  top:0;
+  left: 0;
 }
 
-.col.mid .bar::before{
-  content: "0:25";
+.col.mid .bar-hover{
+  margin: 0 auto;
+  width: 20%;
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 20px;
+  background-color: lightgrey;
+}
+
+.col.mid small{
+  font-size: .7em;
+  font-weight: bold;
+}
+
+.col.mid small:first-of-type{
   position: absolute;
   top: -6px;
   left: -45px;
-  font-size: .7em;
-  font-weight: bold;
 }
 
-.col.mid .bar::after{
-  content: "4:35";
+.col.mid small:last-of-type{
   position: absolute;
   top: -6px;
   right: -45px;
-  font-size: .7em;
-  font-weight: bold;
+}
+
+.mid .bar::after{
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 20% ;
+  width: 12px;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
 }
 
 .col.right{
@@ -436,5 +477,30 @@ footer .col img{
   width:150px;
   min-width: 100px;
   margin-top: 3px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.col.right .bar-hover{
+  height: 4px;
+  border-radius: 20px;
+  background-color: lightgray;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.col.right .bar::after{
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 20% ;
+  width: 12px;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
 }
 /* Footer */

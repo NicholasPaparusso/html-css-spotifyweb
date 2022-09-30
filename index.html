@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="./assets/style/style.css">
   <link rel="stylesheet" href="./assets/style/media.css">
   <link rel="stylesheet" href="./assets/style/effect.css">
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
-  <div class="layout">
+    <!-- Header -->
     <header class="bg-light-black">
       <a class="btn" href="#">
         effettua l'upgrade
       </a>
     </header>
+    <!-- Header -->
     <main class="d-flex">
       <!-- aside -->
       <aside class="bg-black d-flex p-t-20">
@@ -30,7 +32,7 @@
           </div>
           <nav class="">
             <ul class="d-flex p-t-20">
-              <li><a class="p-l-20" href="#"><img src="./assets/img/home.svg" alt=""><span> Home</span></a></li>
+              <li class="active-v"><a class="p-l-20" href="#"><img src="./assets/img/home.svg" alt=""><span> Home</span></a></li>
               <li><a class="p-l-20" href="#"><img src="./assets/img/search.svg" alt="search"><span> Cerca</span></a></li>
               <li><a class="p-l-20" href="#"><img src="./assets/img/libreria.svg" alt="library"><span> La tua libreria</span></a></li>
             </ul>
@@ -80,11 +82,13 @@
         </div>
       </aside>
       <!-- aside -->
+
+      <!-- Main-content -->
       <div class="main-content bg-dark-blue">
         <section class="nav-bar p-20">
           <nav>
             <ul>
-              <li><a href="#">in evidenza</a></li>
+              <li class="active-o"><a href="#">in evidenza</a></li>
               <li><a href="#">podcast</a></li>
               <li><a href="#">classifiche</a></li>
               <li><a href="#">generi e mood</a></li>
@@ -135,10 +139,10 @@
               </div>
           </div>
         </section>
-        <section class="for-u p-l-40 p-t-40 p-r-40">
+        <section class="for-u p-l-40 p-t-20 p-r-40">
             <h2>Creato per Yout1</h2>
             <span>Più ascolti, più accurati saranno i suggerimenti.</span>
-            <div class="card-container d-flex p-t-40">
+            <div class="card-container d-flex p-t-20">
             <div class="card">
               <div class="img-container"><img src="./assets/img/radar.jpeg" alt="radar"></div>
               <h4><a href="#">Release Radar</a></h4>
@@ -151,10 +155,10 @@
           </div>
         </section>
 
-        <section class="popular-artist p-40">
+        <section class="popular-artist p-l-40 p-t-20 p-r-40 p-b-20">
           <h2>Artisti più popolari</h2>
           <span >Più ascolti, più accurati saranno i suggerimenti.</span>
-          <div class="card-container d-flex p-t-40">
+          <div class="card-container d-flex p-t-20">
             <div class="card">
               <div class="img-container"><img src="./assets/img/youg.jpeg" alt=""></div>
               <h4><a href="#">Lana</a></h4>
@@ -165,9 +169,10 @@
               <h4><a href="#">Einaudi</a></h4>
             </div>
         </section>
-
       </div>
+      <!-- Main-content -->
     </main>
+    <!-- Footer -->
     <footer class="bg-dark-grey">
       <div class="container d-flex">  
       
@@ -193,9 +198,10 @@
             <i class="fa-solid fa-arrow-rotate-right"></i>
           </div>
           <div class="bottom">
-       
-            <div class="bar"></div>
-        
+            <div class="bar"><small>0:25</small>
+              <div class="bar-hover"></div>
+              <small>4:35</small>
+            </div>
           </div>
         </div>
 
@@ -203,10 +209,10 @@
           <i class="fa-solid fa-list-ul"></i>
           <i class="fa-solid fa-display"></i>
           <i class="fa-solid fa-volume-high"></i>
-          <div class="bar"></div>
+          <div class="bar"><div class="bar-hover"></div></div>
         </div>
-      </div>
     </footer>
+    <!-- Footer -->
   </div>
 </body>
 </html>

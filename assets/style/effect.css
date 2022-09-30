@@ -6,10 +6,6 @@ aside nav li:hover img{
   scale: 1.2;
 }
 
-aside nav  li:active{
-  border-left: 3px solid #adff2f ;
-}
-
 aside .playlist a:hover i{
   background-color: white;
 }
@@ -17,21 +13,6 @@ aside .playlist a:hover i{
 header .btn:hover{
   scale: 1.05;
 }
-
-.nav-bar li a::after{
-  content: "";
-  border: 2px solid #adff2f;
-  position: absolute;
-  width: 40px;
-  bottom: -5px;
-  left: 50%;
-  transform: translate(-50% , 0);
-  display: none;
-}
-
-.main-content .nav-bar li a:active::after{
-  display: block;
-  }
 
   .main-content img:hover{
    filter:brightness(50%)
@@ -58,7 +39,7 @@ header .btn:hover{
     display: block;
   }
 
-  .img-container::before:hover img{
+  .img-container:hover img{
     filter:brightness(50%)
   }
 
@@ -68,4 +49,16 @@ header .btn:hover{
 
   footer .col.mid i:nth-last-of-type(3):hover{
     scale: 1.2;
+  }
+
+  footer .bar:hover .bar-hover{
+    background-color: #adff2f;
+  }
+
+  .col.right .bar:hover.bar::after{
+    display: block ;
+  }
+
+  .col.mid .bar:hover.bar::after{
+    display: block ;
   }
