@@ -300,10 +300,6 @@ aside nav ul li{
 /* Aside */
 
 /* Main Content */
-.nav-bar{
-  margin: 0 auto;
-}
-
 .nav-bar ul{
   display: flex;
   gap: 2.45em;
@@ -319,7 +315,6 @@ aside nav ul li{
 .card-container{
   gap: 16px;
   flex-shrink: 0;
-  justify-content: flex-start;
   flex-wrap: wrap ;
   margin: 0 auto;
 }
@@ -338,10 +333,6 @@ aside nav ul li{
   color: white;
   font-weight: bold;
   font-size: 1.1em;
-}
-
-.popular-artist{
-  padding-top: 80px;
 }
 
 .popular-artist img{
